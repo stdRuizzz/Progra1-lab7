@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UI version="4.0">
+ <class>Lab7Class</class>
+ <widget class="QMainWindow" name="Lab7Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lab 7 — Contactos</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayoutCentral">
+    <item>
+     <widget class="QStackedWidget" name="stackPages">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="pageRegistrar">
+       <layout class="QVBoxLayout" name="verticalLayoutRegistrar">
+        <item>
+         <widget class="QLabel" name="lblNombre">
+          <property name="text">
+           <string>Nombre</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtNombre">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblTelefono">
+          <property name="text">
+           <string>Teléfono</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtTelefono">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblCorreo">
+          <property name="text">
+           <string>Correo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtCorreo">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnGuardar">
+          <property name="text">
+           <string>Guardar</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacerRegistrar">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageHistorial">
+       <layout class="QVBoxLayout" name="verticalLayoutHistorial">
+        <item>
+         <widget class="QLabel" name="lblHistorialTitulo">
+          <property name="text">
+           <string>Historial de contactos</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tblHistorial">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>Nombre</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Teléfono</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Correo</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnRefrescar">
+          <property name="text">
+           <string>Refrescar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageEditar">
+       <layout class="QVBoxLayout" name="verticalLayoutEditar">
+        <item>
+         <widget class="QLabel" name="lblEditarTitulo">
+          <property name="text">
+           <string>Editar contacto</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tblEditar">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>Nombre</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Teléfono</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Correo</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblEditarNombre">
+          <property name="text">
+           <string>Nombre</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtEditarNombre">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblEditarTelefono">
+          <property name="text">
+           <string>Teléfono</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtEditarTelefono">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblEditarCorreo">
+          <property name="text">
+           <string>Correo</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtEditarCorreo">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnActualizar">
+          <property name="text">
+           <string>Actualizar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageEliminar">
+       <layout class="QVBoxLayout" name="verticalLayoutEliminar">
+        <item>
+         <widget class="QLabel" name="lblEliminarTitulo">
+          <property name="text">
+           <string>Eliminar contacto</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tblEliminar">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>Nombre</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Teléfono</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Correo</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnEliminar">
+          <property name="text">
+           <string>Eliminar seleccionado</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNavegacion">
+    <property name="title">
+     <string>Navegación</string>
+    </property>
+    <addaction name="actionRegistrar"/>
+    <addaction name="actionHistorial"/>
+    <addaction name="actionEditar"/>
+    <addaction name="actionEliminar"/>
+   </widget>
+   <addaction name="menuNavegacion"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar"/>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionRegistrar">
+   <property name="text">
+    <string>Registrar</string>
+   </property>
+  </action>
+  <action name="actionHistorial">
+   <property name="text">
+    <string>Historial</string>
+   </property>
+  </action>
+  <action name="actionEditar">
+   <property name="text">
+    <string>Editar</string>
+   </property>
+  </action>
+  <action name="actionEliminar">
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Lab7.qrc"/>
+ </resources>
+ <connections/>
+</UI>
